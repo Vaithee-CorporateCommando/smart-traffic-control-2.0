@@ -1,0 +1,359 @@
+/* Smart Urban Traffic Control - Design System Stylesheet */
+
+.root {
+    -fx-font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #F8FAFC;
+    -color-navy-dark: #0A2540;
+    -color-navy-primary: #0D3B66;
+    -color-navy-light: #1E3A8A;
+    -color-accent-blue: #2563EB;
+    -color-accent-hover: #1D4ED8;
+    -color-text-dark: #0F172A;
+    -color-text-muted: #64748B;
+    -color-border-light: #E2E8F0;
+    -color-bg-white: #FFFFFF;
+    -color-emerald: #10B981;
+    -color-amber: #F59E0B;
+    -color-crimson: #EF4444;
+}
+
+/* ==================== LOGIN SCREEN STYLES ==================== */
+
+.login-root {
+    -fx-background-color: #FFFFFF;
+}
+
+.login-left-pane {
+    -fx-background-color: linear-gradient(to bottom, #06284d 0%, #0d3b66 100%);
+}
+
+.login-form-container {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 30 50 30 50;
+}
+
+.login-header-title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0A2540;
+}
+
+.login-header-subtitle {
+    -fx-font-size: 13.5px;
+    -fx-text-fill: #64748B;
+}
+
+.field-label {
+    -fx-font-size: 12.5px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #1E293B;
+}
+
+.input-box-container {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 6 12 6 12;
+}
+
+.input-box-container:focused,
+.input-box-container:focus-within {
+    -fx-border-color: #2563EB;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 99, 235, 0.15), 6, 0, 0, 0);
+}
+
+.custom-text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 4 6 4 6;
+    -fx-font-size: 13.5px;
+    -fx-text-fill: #0F172A;
+    -fx-prompt-text-fill: #94A3B8;
+}
+
+.custom-text-field:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.btn-primary-navy {
+    -fx-background-color: #0A3963;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 11 24 11 24;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.btn-primary-navy:hover {
+    -fx-background-color: #07294A;
+}
+
+.btn-primary-navy:pressed {
+    -fx-background-color: #051D33;
+}
+
+.btn-google {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CBD5E1;
+    -fx-border-width: 1.2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #1E293B;
+    -fx-font-size: 13.5px;
+    -fx-font-weight: 600;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+}
+
+.btn-google:hover {
+    -fx-background-color: #F8FAFC;
+    -fx-border-color: #94A3B8;
+}
+
+.link-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #2563EB;
+    -fx-font-size: 12.5px;
+    -fx-font-weight: 600;
+    -fx-cursor: hand;
+    -fx-padding: 0;
+}
+
+.link-button:hover {
+    -fx-underline: true;
+    -fx-text-fill: #1D4ED8;
+}
+
+.divider-line {
+    -fx-background-color: #E2E8F0;
+    -fx-pref-height: 1px;
+}
+
+/* ==================== DASHBOARD COMMON ==================== */
+
+.app-header {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: transparent transparent #E2E8F0 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 12 24 12 24;
+}
+
+.app-title-text {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0A2540;
+}
+
+.status-chip-simulated {
+    -fx-background-color: #EFF6FF;
+    -fx-border-color: #BFDBFE;
+    -fx-border-width: 1;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-padding: 3 10 3 10;
+    -fx-text-fill: #1D4ED8;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.sidebar {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: transparent #E2E8F0 transparent transparent;
+    -fx-border-width: 0 1 0 0;
+    -fx-padding: 16 12 16 12;
+}
+
+.nav-tab-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #475569;
+    -fx-font-size: 13.5px;
+    -fx-font-weight: 600;
+    -fx-alignment: BASELINE_LEFT;
+    -fx-padding: 10 14 10 14;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.nav-tab-btn:hover {
+    -fx-background-color: #F1F5F9;
+    -fx-text-fill: #0F172A;
+}
+
+.nav-tab-btn.active {
+    -fx-background-color: #EFF6FF;
+    -fx-text-fill: #2563EB;
+    -fx-font-weight: bold;
+}
+
+/* ==================== CARD STYLES ==================== */
+
+.metric-card {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 16 18 16 18;
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 23, 42, 0.03), 4, 0, 0, 1);
+}
+
+.metric-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #64748B;
+}
+
+.metric-value {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0F172A;
+}
+
+.metric-sub {
+    -fx-font-size: 11px;
+    -fx-text-fill: #94A3B8;
+}
+
+.content-panel {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 16;
+}
+
+/* ==================== BUTTONS ==================== */
+
+.btn-secondary {
+    -fx-background-color: #F1F5F9;
+    -fx-text-fill: #334155;
+    -fx-font-weight: 600;
+    -fx-background-radius: 6px;
+    -fx-padding: 7 14 7 14;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #E2E8F0;
+}
+
+.btn-accent {
+    -fx-background-color: #2563EB;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-accent:hover {
+    -fx-background-color: #1D4ED8;
+}
+
+.btn-danger {
+    -fx-background-color: #EF4444;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 7 14 7 14;
+    -fx-cursor: hand;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #DC2626;
+}
+
+.btn-success {
+    -fx-background-color: #10B981;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 7 14 7 14;
+    -fx-cursor: hand;
+}
+
+.btn-success:hover {
+    -fx-background-color: #059669;
+}
+
+/* ==================== BADGES ==================== */
+
+.badge-low {
+    -fx-background-color: #ECFDF5;
+    -fx-text-fill: #059669;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 12px;
+}
+
+.badge-medium {
+    -fx-background-color: #FFFBEB;
+    -fx-text-fill: #D97706;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 12px;
+}
+
+.badge-high {
+    -fx-background-color: #FEF2F2;
+    -fx-text-fill: #DC2626;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+    -fx-padding: 3 8 3 8;
+    -fx-background-radius: 12px;
+}
+
+/* ==================== TABLEVIEW STYLES ==================== */
+
+.table-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #F8FAFC;
+    -fx-border-color: transparent transparent #E2E8F0 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #475569;
+    -fx-padding: 8 10 8 10;
+}
+
+.table-view .table-row-cell {
+    -fx-border-color: transparent transparent #F1F5F9 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #FFFFFF;
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #FAFAFA;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #EFF6FF;
+    -fx-text-fill: #1D4ED8;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #F8FAFC;
+}
